@@ -1,7 +1,8 @@
 body {
     font-family: 'Noto Sans', sans-serif;
-    background-color: rgba(156, 243, 240, 0.42);
+    background-color: whitesmoke;
     color: #001f3f;
+    margin: 0;
 }
 
 h1,
@@ -16,22 +17,79 @@ h4 {
     margin: 0 auto;
 }
 
-.container > div {
+.home-container {
+    background-position: center;
+    height: 80vh;
+    position: relative;
+    background-color: whitesmoke;
+}
+
+@media only screen and (max-width: 37.5em) {
+    .home-container {
+        height: unset;
+        min-height: unset;
+    }
+}
+
+.container>div {
     margin: 20px auto;
 }
 
 hr {
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    ;
+}
+
+.navigation-bar {
+    background-color: #001f3f;
+    overflow: hidden;
+    position: relative;
+}
+
+.nav-list {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    margin: 2em;
+}
+
+.nav-link {
+    color: white;
+    position: relative;
+    text-decoration: none;
+    padding: 3em;
+    font-size: larger;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .intro {
     text-align: center;
+    padding-top: 1em;
 }
 
-.quote {
-    font-style: italic;
+.name-animate {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 3.5em;
+    font-weight: 200;
+    margin: 1em;
+}
+
+.portfolio-blurb {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.5em;
+    font-weight: 200;
+    margin: 1em;
+}
+
+.intro h3 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1em;
+    font-weight: 200;
+    margin: 1em;
+    padding-left: 25%;
+    padding-right: 25%;
 }
 
 .about-grid {
@@ -98,8 +156,8 @@ hr {
 
 .profile-picture {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
     transition: all ease-in-out .2s;
 }
@@ -140,7 +198,8 @@ hr {
     transition: all ease-in-out .2s;
 }
 
-form input, textarea {
+form input,
+textarea {
     padding: 5px;
     border-radius: 5px;
     width: 240px;
