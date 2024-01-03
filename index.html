@@ -6,17 +6,32 @@
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Montserrat:wght@500&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
+    <!-- Navbar -->
+    <div class="navigation-bar">
+        <ul class="nav-list">
+            <li><a class="nav-link" href="/">Home</a></li>
+            <li><a class="nav-link" href="/about">About</a></li>
+            <li><a class="nav-link" href="/projects.html">Projects</a></li>
+        </ul>
+    </div>
+    <div class="home-container">
         <!-- Head Section -->
         <div class="intro">
             <img class="profile-picture" src="images/profile-picture.jpg" />
-            <h1>Lily Eckhart</h1>
-            <h3>Data Entry Clerk at The Winans Group PC, CPA</h3>
-            <p class="quote">{{ Pause and Ponder }}</p>
+            <h1 class="name-animate">Hello! 
+                <span class="txt-rotate" data-period="2000"
+                    data-rotate='[ "My name is Lily Eckhart.", "I am a Web Developer."]'></span>
+            </h1>
+            <h2 class="portfolio-blurb">Welcome to my portfolio! I'm glad you're here!</h2>
+            <h3>Feel free to explore my page to learn more about me and some of my projects I have completed!</h3>
         </div>
+    </div>
+    <div class="about-container">
         <hr>
         <!-- About Section -->
         <div class="about-grid">
