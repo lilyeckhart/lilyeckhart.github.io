@@ -3,7 +3,7 @@ var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
     this.loopNum = 0;
-    this.period = parseInt(period, 10) || 2000;
+    this.period = parseInt(period, 5) || 2000;
     this.txt = '';
     this.tick();
     this.isDeleting = false;
@@ -55,29 +55,9 @@ var TxtRotate = function(el, toRotate, period) {
     document.body.appendChild(css);
   };
 
-// Contact form script
 
-  let submitButton = document.querySelector('#submit-button');
-
-function emailValidate(email) {
-    return email.includes('@');
+  
+// email launch
+function sendEmail() {
+  window.location="mailto:lillian.eckhart23@gmail.com";
 }
-
-function clickListener(event) {
-    event.preventDefault();
-    
-    let emailInput = document.querySelector('#email');
-    let messageInput = document.querySelector('#message');
-
-    let emailText = emailInput.value;
-    let messageText = messageInput.value;
-
-    if (emailValidate(emailText) !== true) {
-        console.log('The email address must contain @');
-        return false;
-    }
-    
-    console.log('Thanks for your message!');
-}
-
-submitButton.addEventListener('click', clickListener);
