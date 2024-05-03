@@ -19,93 +19,78 @@
             <li><a class="nav-link" href="/projects">Projects</a></li>
         </ul>
     </div>
+
+    <!-- Welcome Section -->
     <div class="home-container">
-        <!-- Head Section -->
         <div class="intro">
             <img class="profile-picture" src="images/profile-picture.jpg" />
-            <h1 class="name-animate">Hello! 
+            <h1 class="name-animate">Hello!
                 <span class="txt-rotate" data-period="2000"
-                    data-rotate='[ "My name is Lily Eckhart.", "I am a Web Developer."]'></span>
+                    data-rotate='[ "My name is Lily.", "I am a Web Developer."]'></span>
             </h1>
             <h2 class="portfolio-blurb">Welcome to my portfolio! I'm glad you're here!</h2>
             <h3>Feel free to explore my page to learn more about me and some of my projects I have completed!</h3>
         </div>
     </div>
-    <div class="about-container">
-        <hr>
-        <!-- About Section -->
-        <div class="about-grid">
-            <div class="i-am">
-                <h3>I am</h3>
-                <ul class="about-list">
-                    <li>A developer</li>
-                    <li>A gamer</li>
-                    <li>A hobby cook</li>
-                </ul>
-            </div>
-            <div class="i-like">
-                <h3>I like to</h3>
-                <ul class="about-list" <li>Read books</li>
-                    <li>Hang out with my friends</li>
-                    <li>Drink coffee</li>
-                </ul>
-            </div>
-        </div>
-        <hr>
-        <!-- Project Section -->
-        <div>
-            <h3 class="project-heading">My Projects</h3>
-            <div class="project-grid">
-                <div class="project-image-wrapper">
-                    <h4>Project 1</h4>
-                    <img class="project-image" src="https://via.placeholder.com/300" />
+
+    <!-- About Section -->
+    <div class="row">
+        <div class="aboutMe">
+            <h1 class="about-column">About Me</h1>
+            <p>Computer science professional with a passion for technology. Armed with a strong skill set, analytical
+                mindset, and dedication to continuous growth, I am poised to make a valuable contribution to software
+                development, data analysis, or any other field within the realm of computer science.
+            </p>
+            <div class="socialLinks">
+                <div class="linkedIn">
+                    <a href="https://www.linkedin.com/in/lilliancornell/">
+                        <img src="images/linkedin_logo.jpg" alt="LinkedIn">
                 </div>
-                <div class="project-image-wrapper">
-                    <h4>Project 2</h4>
-                    <img class="project-image" src="https://via.placeholder.com/300" />
+                <div class="github">
+                    <a href="https://www.linkedin.com/in/lilliancornell/">
+                        <img src="images/github_logo.png" alt="GitHub">
+                    </a>
                 </div>
-                <div class="project-image-wrapper">
-                    <h4>Project 3</h4>
-                    <img class="project-image" src="https://via.placeholder.com/300" />
-                </div>
-                <div class="project-image-wrapper">
-                    <h4>Project 4</h4>
-                    <img class="project-image" src="https://via.placeholder.com/300" />
-                </div>
-            </div>
-        </div>
-        <hr>
-        <!-- Links to Socials -->
-        <div class="links-and-contact">
-            <div class="links">
-                <h3>Links</h3>
-                <ul class="link-list">
-                    <li>
-                        <a href="https://www.linkedin.com/in/lilliancornell/">LinkedIn</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/lilyeckhart">GitHub</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Message Form -->
-            <div class="contact">
-                <form action="#">
-                    <label for="email">
-                        <h4>Email</h4>
-                        <input type="email" id="email" placeholder="Enter your email" />
-                    </label>
-                    <label for="message">
-                        <h4>Message</h4>
-                        <textarea id="message" placeholder="Your message"></textarea>
-                    </label>
-                    <div class="submit-button-wrapper">
-                        <input type="submit" valid="Send Message" id="submit-button" />
+                <div class="email">
+                    <div class="emailButton" onclick="sendEmail();"r>
+                        <img src="images/email_logo.jpg" alt="Email">
                     </div>
-                </form>
+                </div>
             </div>
+        </div>
+
+        <div class="skillList">
+            <h2 class="skill-column">My Certifications</h2>
+            <div class="mySkillList">
+                <ul class="list">
+                    <li class="list-item">HTML5</li>
+                    <li class="list-item">CSS3</li>
+                </ul>
+            </div>
+            <h2 class="skill-column">My Skills</h2>
+            <div class="mySkillList">
+                <ul class="list-right">
+                    <li class="list-item">Design & Development</li>
+                    <li class="list-item">Data Structures</li>
+                    <li class="list-item">MS Office Suite</li>
+                    <li class="list-item">UI/UX Design</li>
+                </ul>
+                <ul class="list-left">
+                    <li class="list-item">Java/SavaScript</li>
+                    <li class="list-item">Python</li>
+                    <li class="list-item">HTML</li>
+                    <li class="list-item">CSS</li>
+                </ul>
+            </div>
+            
         </div>
     </div>
+
+    <!-- Project Section -->
+    <div class="project-container">
+        <h3 class="project-heading">My Projects</h3>
+    </div>
+
     <script src="script.js"></script>
 </body>
 
