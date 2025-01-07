@@ -1,0 +1,127 @@
+/* title / hero section */
+*, #linkedin-link {
+    color: #432E54
+}
+
+body {
+    background-color: #E8BCB9;
+}
+
+.gradient-background {
+    background: linear-gradient(300deg, #E8BCB9, #AE445A);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#title {
+    padding-bottom: 80px;
+}
+
+span.fs-4 {
+    color: #432E54;
+    font-weight: bold;
+}
+
+#navbar-items li a {
+    color: #4B4376;
+    font-weight: 600;
+}
+
+#navbar-items li a:hover {
+    background-color: #4B4376;
+    color: #E8BCB9;
+}
+
+#learn-button {
+    color: #432E54;
+    background-color: #E8BCB9;
+    border-color: #E8BCB9;
+}
+
+#learn-button:hover {
+    background-color: #4B4376;
+    color: #E8BCB9;
+}
+
+#hero-section {
+    color: #4B4376;
+}
+
+#hero-section h1 {
+    color: #432E54;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+/* about section */
+.section-border-line {
+    border-bottom: 1px solid;
+    border-color: #432E54;
+    padding-bottom: 10px;
+}
+
+/* resume section */
+
+
+
+/* project section */
+
+#project-images {
+    width: 100%;
+    height: 225px;
+}
+
+#image-card {
+    max-width: 500px;
+}
+
+#project-container-card {
+    justify-content: center;
+}
+
+/* contact section */
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.image-container h4 {
+    font-size: medium;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 550px) {
+    #navbar-items {
+        justify-content: center;
+    }
+    .image-container h4 {
+        font-size: small;
+        position: absolute;
+        top: 40%;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* footer section */
+#copyright-msg {
+    padding-top: 15px;
+}
